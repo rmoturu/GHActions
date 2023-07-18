@@ -46,7 +46,7 @@ jobs:
         artifacts: '[{"name": "com:demo4","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "${{ github.repository }}"}]'
        
   deploy:
-      name: deploy
+      name: Prod deploy
       needs: publish
       runs-on: ubuntu-latest
       steps:    
