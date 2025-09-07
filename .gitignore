@@ -1,0 +1,38 @@
+# Ignore common operating system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.bak
+
+# Ignore build artifacts and temporary files
+build/
+dist/
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+*.log
+*.tmp
+*.zip
+*.rar
+*.tar.gz
+
+# Ignore sensitive information
+.env
+config/local.js
+secrets.json
+
+# Ignore compiled binaries (if applicable)
+*.exe
+*.dll
+*.o
+*.so

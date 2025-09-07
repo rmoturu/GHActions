@@ -1,0 +1,29 @@
+name: First
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  job1:
+    name: First job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v5
+      - name: Step two
+        run: env | sort
+  job2:
+    name: Second job
+    runs-on: windows-latest
+    steps:
+      - name: Step one
+        uses: actions/checkout@v5
+      - name: Step two
+        run: "Get-ChildItem Env: | Sort-Object Name"
